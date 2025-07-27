@@ -1,0 +1,12 @@
+.git
+.github
+.next
+node_modules
+.dockerignore
+Dockerfile
+README.md
+.env*
+.vscode
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
