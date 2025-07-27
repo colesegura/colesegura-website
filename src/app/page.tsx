@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Navigation from '../components/Navigation';
 
 export default function Home() {
   // Social media links
@@ -10,7 +11,8 @@ export default function Home() {
   ];
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-4 md:p-24 relative">
+    <main className="flex min-h-screen flex-col items-center justify-between p-4 pt-20 md:p-24 md:pt-28 relative">
+      <Navigation />
       {/* Aurora background effect */}
       <div className="aurora">
         <div className="aurora-wave"></div>
@@ -64,29 +66,23 @@ export default function Home() {
         {/* Projects section */}
         <div className="w-full mb-12">
           <h3 className="text-2xl font-semibold mb-4">Projects</h3>
-          <div className="grid grid-cols-1 gap-4">
-            <div className="bg-obsidian p-6 rounded-lg border border-gray-800 flex items-center">
-              <div className="mr-4 relative w-16 h-16 flex-shrink-0">
+          <div className="flex justify-center">
+            <Link 
+              href="https://horizonframeapp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="relative w-24 h-24 mx-auto">
                 <Image 
                   src="/images/HorizonFrameLogo.png" 
                   alt="HorizonFrame Logo" 
                   fill
-                  className="rounded-xl object-contain"
+                  className="rounded-[20px] object-contain shadow-lg hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div>
-                <h4 className="text-xl font-medium mb-1">HorizonFrame</h4>
-                <p className="text-gray-300 mb-2">Mobile app to help you stay aligned with your dreams</p>
-                <Link 
-                  href="https://horizonframeapp.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-emerald hover:underline inline-block"
-                >
-                  Learn more →
-                </Link>
-              </div>
-            </div>
+              <p className="text-center mt-2 text-emerald">HorizonFrame</p>
+            </Link>
           </div>
         </div>
         
