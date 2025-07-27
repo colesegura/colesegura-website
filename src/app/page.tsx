@@ -6,8 +6,8 @@ export default function Home() {
   // Social media links
   const socialLinks = [
     { name: 'LinkedIn', url: 'https://linkedin.com/in/colesegura', icon: '/icons/linkedin.svg' },
-    { name: 'Instagram', url: 'https://instagram.com/colesegura', icon: '/icons/instagram.svg' },
-    { name: 'YouTube', url: 'https://youtube.com/@colesegura', icon: '/icons/youtube.svg' }
+    { name: 'Instagram', url: 'https://www.instagram.com/cole.segura/', icon: '/icons/instagram.svg' },
+    { name: 'YouTube', url: 'https://www.youtube.com/@colesegura', icon: '/icons/youtube.svg' }
   ];
 
   return (
@@ -101,43 +101,16 @@ export default function Home() {
         </div>
       </div>
       
-      {/* Photo Gallery */}
+      {/* Featured Photo */}
       <div className="w-full mt-12">
-        <h2 className="text-2xl font-bold mb-6 text-center">Photo Gallery</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-[1.02]">
+        <div className="w-full">
+          <div className="relative h-96 overflow-hidden rounded-lg transition-transform duration-300 hover:scale-[1.01]">
             <Image
-              src="/PersonalImage.JPG"
-              alt="Personal Image"
-              fill
-              style={{ objectFit: 'cover' }}
-              className="rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-[1.02]">
-            <Image
-              src="/PersonalImage2.jpg"
-              alt="Personal Image 2"
-              fill
-              style={{ objectFit: 'cover' }}
-              className="rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-[1.02]">
-            <Image
-              src="/PersonalImage3.JPG"
-              alt="Personal Image 3"
-              fill
-              style={{ objectFit: 'cover' }}
-              className="rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-[1.02]">
-            <Image
-              src="/PersonalImage4.JPG"
-              alt="Personal Image 4"
-              fill
-              style={{ objectFit: 'cover' }}
+              src="/images/PersonalImage2.jpg"
+              alt="Cole Segura"
+              width={1200}
+              height={600}
+              style={{ objectFit: 'contain', width: '100%', height: '100%' }}
               className="rounded-lg"
             />
           </div>
