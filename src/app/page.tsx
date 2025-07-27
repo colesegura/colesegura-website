@@ -2,12 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
-  // Social media links - update these with your actual profiles
+  // Social media links
   const socialLinks = [
-    { name: 'Twitter', url: 'https://twitter.com/colesegura', icon: '/icons/twitter.svg' },
     { name: 'LinkedIn', url: 'https://linkedin.com/in/colesegura', icon: '/icons/linkedin.svg' },
-    { name: 'GitHub', url: 'https://github.com/colesegura', icon: '/icons/github.svg' },
-    // Add more social links as needed
+    { name: 'Instagram', url: 'https://instagram.com/colesegura', icon: '/icons/instagram.svg' },
+    { name: 'YouTube', url: 'https://youtube.com/@colesegura', icon: '/icons/youtube.svg' }
   ];
 
   return (
@@ -24,15 +23,12 @@ export default function Home() {
         {/* Profile section */}
         <div className="mb-12">
           <div className="relative w-32 h-32 mb-6 mx-auto">
-            {/* Replace with your actual profile image */}
-            <div className="w-full h-full rounded-full bg-gradient-to-r from-emerald to-violet"></div>
-            {/* Uncomment when you have a profile image */}
-            {/* <Image 
-              src="/profile.jpg" 
+            <Image 
+              src="/images/Headshot.JPG" 
               alt="Cole Segura" 
               fill
-              className="rounded-full object-cover"
-            /> */}
+              className="rounded-full object-cover border-2 border-emerald"
+            />
           </div>
           
           <h1 className="text-4xl font-bold mb-2">Cole Segura</h1>
@@ -41,12 +37,10 @@ export default function Home() {
           {/* Bio section */}
           <div className="text-left mb-8">
             <p className="mb-4">
-              I'm a passionate developer focused on creating intuitive and beautiful digital experiences. 
-              Currently working on HorizonFrame, an app that helps people frame their digital content.
+              I'm a Computer Science student at The University of Alabama. I also created HorizonFrame, a mobile app designed to help you stay aligned with your dreams.
             </p>
             <p>
-              With a background in [your background], I specialize in [your specialties]. 
-              I'm passionate about [your interests] and always looking for new challenges.
+              I love travelling and making content while I'm out and about exploring the world.
             </p>
           </div>
         </div>
@@ -61,29 +55,38 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex items-center px-4 py-2 bg-obsidian border border-gray-700 rounded-full hover:bg-gray-800 transition-colors"
             >
+              <Image src={link.icon} alt={link.name} width={20} height={20} className="mr-2" />
               <span>{link.name}</span>
             </Link>
           ))}
         </div>
         
-        {/* Projects or additional sections */}
+        {/* Projects section */}
         <div className="w-full mb-12">
           <h3 className="text-2xl font-semibold mb-4">Projects</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-obsidian p-4 rounded-lg border border-gray-800">
-              <h4 className="text-xl font-medium mb-2">HorizonFrame</h4>
-              <p className="text-gray-300">An app for framing digital content</p>
-              <Link 
-                href="https://horizonframeapp.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-emerald hover:underline mt-2 inline-block"
-              >
-                Learn more →
-              </Link>
+          <div className="grid grid-cols-1 gap-4">
+            <div className="bg-obsidian p-6 rounded-lg border border-gray-800 flex items-center">
+              <div className="mr-4 relative w-16 h-16 flex-shrink-0">
+                <Image 
+                  src="/images/HorizonFrameLogo.png" 
+                  alt="HorizonFrame Logo" 
+                  fill
+                  className="rounded-xl object-contain"
+                />
+              </div>
+              <div>
+                <h4 className="text-xl font-medium mb-1">HorizonFrame</h4>
+                <p className="text-gray-300 mb-2">Mobile app to help you stay aligned with your dreams</p>
+                <Link 
+                  href="https://horizonframeapp.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald hover:underline inline-block"
+                >
+                  Learn more →
+                </Link>
+              </div>
             </div>
-            
-            {/* Add more project cards as needed */}
           </div>
         </div>
         
@@ -94,11 +97,34 @@ export default function Home() {
             Interested in working together? Feel free to reach out via email or social media.
           </p>
           <a 
-            href="mailto:your-email@example.com" 
+            href="mailto:cole@colesegura.com" 
             className="px-6 py-3 bg-gradient-to-r from-emerald to-violet rounded-full font-medium hover:opacity-90 transition-opacity"
           >
             Contact Me
           </a>
+        </div>
+      </div>
+      
+      {/* Photo Gallery */}
+      <div className="w-full mb-12">
+        <h3 className="text-2xl font-semibold mb-4">Gallery</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="aspect-video relative rounded-lg overflow-hidden">
+            <Image 
+              src="/images/PersonalImage.JPG" 
+              alt="Cole Segura" 
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="aspect-video relative rounded-lg overflow-hidden">
+            <Image 
+              src="/images/PersonalImage2.jpg" 
+              alt="Cole Segura" 
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
         </div>
       </div>
       
