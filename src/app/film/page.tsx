@@ -8,60 +8,66 @@ export default function FilmPage() {
       name: 'iPhone 12 Pro Max',
       description: 'My primary camera for most video work',
       link: 'https://www.apple.com/shop/buy-iphone/iphone-12-pro',
-      image: '/images/placeholder.jpg' // You can add actual product images later
+      image: '/images/placeholder.jpg'
     },
     {
-      name: 'Moment M Series Case',
+      name: 'Moment M Series Case for iPhone 12',
       description: 'Protective case that allows for mounting specialized lenses',
-      link: 'https://www.shopmoment.com/products/moment-case-iphone',
+      link: 'https://www.shopmoment.com/products/moment-case-for-iphone-12?variant=47464660992315',
       image: '/images/placeholder.jpg'
     },
     {
-      name: '67mm Adapter',
+      name: '67mm Mobile Lens Filter Mount',
       description: 'Allows mounting of standard 67mm filters to smartphone',
-      link: 'https://www.shopmoment.com/products/67mm-filter-mount',
+      link: 'https://www.shopmoment.com/products/67mm-lens-filter-mount?variant=47464363393339',
       image: '/images/placeholder.jpg'
     },
     {
-      name: 'ND Filter',
-      description: 'Neutral density filter for controlling exposure in bright conditions',
-      link: 'https://www.shopmoment.com/products/variable-nd-filters',
+      name: 'K&F Concept 67mm Variable ND2-32',
+      description: 'Variable neutral density filter for controlling exposure in bright conditions',
+      link: 'https://www.amazon.com/dp/B0CRRD773T',
       image: '/images/placeholder.jpg'
     },
     {
-      name: 'Lens Blower',
-      description: 'For keeping lenses and sensors clean',
-      link: 'https://www.bhphotovideo.com/c/product/259157-REG/Giottos_AA1900_Rocket_Air_Blower.html',
+      name: 'K&F Concept 67mm ND64 Lens Filter',
+      description: 'Fixed neutral density filter for long exposure shots',
+      link: 'https://www.amazon.com/dp/B0BC97K7W6',
       image: '/images/placeholder.jpg'
     },
     {
-      name: 'DJI Osmo Mobile 7P',
+      name: 'DJI Osmo Mobile 7P Gimbal',
       description: 'Smartphone gimbal for smooth, stabilized footage',
-      link: 'https://store.dji.com/product/osmo-mobile-7',
+      link: 'https://www.amazon.com/dp/B07FTG84SW',
       image: '/images/placeholder.jpg'
     },
     {
-      name: 'Hollyland Microphone Set',
+      name: 'Hollyland Lark A1 Wireless Microphone Set',
       description: 'Wireless microphone system for high-quality audio',
-      link: 'https://www.hollyland.com/products/lark',
+      link: 'https://www.amazon.com/dp/B0F3DF588W',
       image: '/images/placeholder.jpg'
     },
     {
-      name: 'Samsung T7 Shield',
+      name: 'Samsung T7 Shield 2TB',
       description: 'Rugged external SSD for storing footage in the field',
-      link: 'https://www.samsung.com/us/computing/memory-storage/portable-solid-state-drives/t7-shield-portable-ssd-1tb-blue-mu-pe1t0h-am/',
+      link: 'https://www.amazon.com/dp/B09VLHR4JC',
       image: '/images/placeholder.jpg'
     },
     {
-      name: 'Apple iPhone Camera Adapter (Lightning)',
+      name: 'Apple Lightning to USB 3 Camera Adapter',
       description: 'For transferring photos and videos directly to external storage',
-      link: 'https://www.apple.com/shop/product/MD821AM/A/lightning-to-usb-camera-adapter',
+      link: 'https://www.amazon.com/dp/B01F7KJDIM',
       image: '/images/placeholder.jpg'
     },
     {
-      name: 'Fujifilm FinePix Z10fd',
-      description: 'Retro digital camera for a unique look',
-      link: 'https://www.dpreview.com/products/fujifilm/compacts/fuji_finepixz10fd',
+      name: 'INIU 10,000 mAh 45W Power Bank (2x)',
+      description: 'Portable power for extended shooting sessions',
+      link: 'https://www.amazon.com/dp/B0CB1FW5FC',
+      image: '/images/placeholder.jpg'
+    },
+    {
+      name: 'ULANZI MT-44 Extendable Phone Tripod, 59"',
+      description: 'Versatile tripod for stable shots and unique angles',
+      link: 'https://www.amazon.com/dp/B09T92NK4J',
       image: '/images/placeholder.jpg'
     }
   ];
@@ -100,6 +106,17 @@ export default function FilmPage() {
               </Link>
             </div>
           ))}
+        </div>
+        
+        {/* Projects section */}
+        <div className="w-full mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
+          <div className="bg-obsidian p-8 rounded-lg border border-gray-800 text-center">
+            <h3 className="text-2xl font-medium mb-4">Coming Soon</h3>
+            <p className="text-gray-300">
+              I'm currently working on some exciting film projects. Check back soon to see my latest work!
+            </p>
+          </div>
         </div>
       </div>
       

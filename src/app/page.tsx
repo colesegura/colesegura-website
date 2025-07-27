@@ -42,7 +42,7 @@ export default function Home() {
               I'm a Computer Science student at The University of Alabama. I also created HorizonFrame, a mobile app designed to help you stay aligned with your dreams.
             </p>
             <p>
-              I love travelling and making content while I'm out and about exploring the world.
+              I love traveling and making content while I'm out and about exploring the world.
             </p>
           </div>
         </div>
@@ -102,23 +102,43 @@ export default function Home() {
       </div>
       
       {/* Photo Gallery */}
-      <div className="w-full mb-12">
-        <h3 className="text-2xl font-semibold mb-4">Gallery</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="aspect-video relative rounded-lg overflow-hidden">
-            <Image 
-              src="/images/PersonalImage.JPG" 
-              alt="Cole Segura" 
+      <div className="w-full mt-12">
+        <h2 className="text-2xl font-bold mb-6 text-center">Photo Gallery</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-[1.02]">
+            <Image
+              src="/PersonalImage.JPG"
+              alt="Personal Image"
               fill
-              className="object-cover hover:scale-105 transition-transform duration-300"
+              style={{ objectFit: 'cover' }}
+              className="rounded-lg"
             />
           </div>
-          <div className="aspect-video relative rounded-lg overflow-hidden">
-            <Image 
-              src="/images/PersonalImage2.jpg" 
-              alt="Cole Segura" 
+          <div className="relative aspect-[4/3] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-[1.02]">
+            <Image
+              src="/PersonalImage2.jpg"
+              alt="Personal Image 2"
               fill
-              className="object-cover hover:scale-105 transition-transform duration-300"
+              style={{ objectFit: 'cover' }}
+              className="rounded-lg"
+            />
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-[1.02]">
+            <Image
+              src="/PersonalImage3.JPG"
+              alt="Personal Image 3"
+              fill
+              style={{ objectFit: 'cover' }}
+              className="rounded-lg"
+            />
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-[1.02]">
+            <Image
+              src="/PersonalImage4.JPG"
+              alt="Personal Image 4"
+              fill
+              style={{ objectFit: 'cover' }}
+              className="rounded-lg"
             />
           </div>
         </div>
@@ -126,7 +146,7 @@ export default function Home() {
       
       {/* Footer */}
       <footer className="w-full text-center mt-16 text-sm text-gray-400">
-        © {new Date().getFullYear()} Cole Segura. All rights reserved.
+        &copy; {new Date().getFullYear()} Cole Segura. All rights reserved.
       </footer>
     </main>
   );
